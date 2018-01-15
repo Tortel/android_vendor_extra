@@ -5,3 +5,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=http://updater.theflamingskull.com/api
 
 $(call prepend-product-if-exists, vendor/jrior001/product.mk)
+
+GAPPS_VARIANT := nano
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
+
