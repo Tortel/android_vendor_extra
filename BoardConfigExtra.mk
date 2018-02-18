@@ -1,1 +1,1 @@
--include vendor/jrior001/BoardConfigExtra.mk
+#-include vendor/tortel/BoardConfigExtra.mk
