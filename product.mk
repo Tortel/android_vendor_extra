@@ -1,9 +1,11 @@
 #PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
 PRODUCT_PACKAGES += \
-    auditd \
-    email-prebuilt \
-    exchange-prebuilt
+    auditd
+
+PRODUCT_PACKAGES += \
+    Email \
+    Exchange2
 
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    lineage.updater.uri=http://updater.theflamingskull.com/api
