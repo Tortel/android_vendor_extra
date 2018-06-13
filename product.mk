@@ -22,7 +22,4 @@ else
   GAPPS_VARIANT := pico
 endif
 
-TW_EXCLUDE_TWRPAPP := true
-TW_USE_TOOLBOX := true
-
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
