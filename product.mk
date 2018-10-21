@@ -4,8 +4,8 @@ PRODUCT_PACKAGES += \
     auditd
 
 PRODUCT_PACKAGES += \
-    Email \
-    Exchange2
+   Email \
+   Exchange2
 
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    lineage.updater.uri=http://updater.theflamingskull.com/api
