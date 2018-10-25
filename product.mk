@@ -7,6 +7,8 @@ PRODUCT_PACKAGES += \
    Email \
    Exchange2
 
+GAPPS_PRODUCT_PACKAGES += DigitalWellbeing
+
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    lineage.updater.uri=http://updater.theflamingskull.com/api
 
