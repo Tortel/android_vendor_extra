@@ -22,4 +22,8 @@ else
   GAPPS_VARIANT := pico
 endif
 
+PRODUCT_COPY_FILES += \
+    vendor/extra/adb_keys:$(TARGET_RECOVERY_ROOT_OUT)/root/adb_keys \
+    vendor/extra/adb_keys:$(TARGET_ROOT_OUT)/adb_keys
+
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
