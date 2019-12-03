@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
     OnePlusCameraService \
     OnePlusGallery
 
+# OnePlus mock crap
+PRODUCT_PACKAGES += oneplus-mock
+PRODUCT_BOOT_JARS += oneplus-mock
+
 # Permissions for OnePlus camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/op/etc/permissions/privapp-permissions-oem.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oem.xml
