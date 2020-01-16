@@ -20,6 +20,13 @@ else
 #  $(call inherit-product, vendor/gapps/arm/arm-vendor.mk)
 endif
 
+# Sounds
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sounds/Cloud.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Cloud.ogg \
+    $(LOCAL_PATH)/sounds/Pollux.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Pollux.ogg \
+    $(LOCAL_PATH)/sounds/Pure_Tone.mp3:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Pure_Tone.mp3
+
+# ADB Keys
 PRODUCT_COPY_FILES += \
     vendor/extra/adb_keys:$(TARGET_RECOVERY_ROOT_OUT)/root/adb_keys \
     vendor/extra/adb_keys:$(TARGET_ROOT_OUT)/adb_keys
