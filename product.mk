@@ -31,4 +31,20 @@ PRODUCT_COPY_FILES += \
     vendor/extra/adb_keys:$(TARGET_RECOVERY_ROOT_OUT)/root/adb_keys \
     vendor/extra/adb_keys:$(TARGET_ROOT_OUT)/adb_keys
 
+# OnePlus 7 specific stuff
+ifneq ($(filter lineage_guacamole,$(TARGET_PRODUCT)),)
+# OnePlus camera-related apps
+PRODUCT_PACKAGES += \
+    CameraPackage \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery
+
+# Permissions for OnePlus camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/op/etc/permissions/privapp-permissions-oem.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oem.xml
+
+endif
+
+
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
