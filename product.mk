@@ -1,5 +1,8 @@
 #PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/extra
+
 PRODUCT_PACKAGES += \
     auditd
 
@@ -35,7 +38,7 @@ PRODUCT_COPY_FILES += \
 ifneq ($(filter lineage_guacamole,$(TARGET_PRODUCT)),)
 # OnePlus camera-related apps
 PRODUCT_PACKAGES += \
-    CameraPackage \
+    OPCameraResources \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery

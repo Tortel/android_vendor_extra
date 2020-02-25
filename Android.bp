@@ -1,0 +1,46 @@
+soong_namespace {
+}
+
+android_app_import {
+        name: "OnePlusCamera",
+        owner: "oneplus",
+        apk: "op/priv-app/OnePlusCamera/OnePlusCamera.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
+
+android_app_import {
+        name: "OnePlusGallery",
+        owner: "oneplus",
+        apk: "op/priv-app/OnePlusGallery/OnePlusGallery.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
+
+android_app_import {
+        name: "OnePlusCameraService",
+        owner: "oneplus",
+        apk: "op/priv-app/OnePlusCameraService/OnePlusCameraService.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
+
+android_app_import {
+        name: "OPCameraResources",
+        owner: "oneplus",
+        apk: "op/priv-app/OPCameraResources/OPCameraResources.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
