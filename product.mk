@@ -6,11 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     auditd
 
-GAPPS_PRODUCT_PACKAGES += \
-    Chrome \
-    Maps \
-    AndroidAuto
-
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
 
 #PRODUCT_PROPERTY_OVERRIDES += \
