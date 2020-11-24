@@ -6,7 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     auditd
 
-GAPPS_PRODUCT_PACKAGES += DigitalWellbeing
+GAPPS_PRODUCT_PACKAGES += \
+    Chrome \
+    Maps \
+    AndroidAuto
 
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
 
@@ -59,6 +62,5 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/op/lib64/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDxHdcp.so
 
 endif
-
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
