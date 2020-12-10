@@ -8,6 +8,9 @@ PRODUCT_PACKAGES += \
 
 GAPPS_EXCLUDED_PACKAGES := GooglePackageInstaller
 
+GAPPS_PRODUCT_PACKAGES += \
+    AndroidAuto
+
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    lineage.updater.uri=http://updater.theflamingskull.com/api
 
