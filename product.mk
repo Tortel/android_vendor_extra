@@ -39,9 +39,9 @@ PRODUCT_COPY_FILES += \
 ifneq ($(filter lineage_guacamole,$(TARGET_PRODUCT)),)
 # OnePlus camera-related apps
 PRODUCT_PACKAGES += \
-    OPCameraResources \
-    OnePlusCamera \
-    OnePlusCameraService \
+#    OPCameraResources \
+#    OnePlusCamera \
+#    OnePlusCameraService \
     OnePlusGallery
 
 # OnePlus mock crap
