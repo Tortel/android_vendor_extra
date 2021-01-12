@@ -9,7 +9,7 @@ PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_MANUFACTURER := Google
 
-BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.210105.003/7005429:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="coral" \
     PRODUCT_BRAND="Google" \
@@ -17,10 +17,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="coral" \
     PRODUCT_MODEL="Pixel 4 XL" \
     PRODUCT_MANUFACTURER="Google" \
-    PRIVATE_BUILD_DESC="coral-user 11 RQ1A.201205.008 6943376 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RQ1A.210105.003 7005429 release-keys"
 
 # Fix the security patch to keep in line with fingerprint
-PLATFORM_SECURITY_PATCH := 2020-12-05
+PLATFORM_SECURITY_PATCH := 2021-01-05
 
 endif
 
