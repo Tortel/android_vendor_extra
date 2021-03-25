@@ -16,13 +16,8 @@ GAPPS_PRODUCT_PACKAGES += \
 
 #$(call prepend-product-if-exists, vendor/tortel/product.mk)
 
-ifeq ($(TARGET_ARCH),arm64)
-  GAPPS_VARIANT := nano
-#  $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-else
-  GAPPS_VARIANT := pico
-#  $(call inherit-product, vendor/gapps/arm/arm-vendor.mk)
-endif
+GAPPS_VARIANT := nano
+#$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Sounds
 PRODUCT_COPY_FILES += \
@@ -61,4 +56,7 @@ PRODUCT_COPY_FILES += \
 
 endif
 
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+#$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+# Gapps
+$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
